@@ -33,8 +33,9 @@
 			<ul>
 				<li><a href="#intro" class="active">About</a></li>
 				<li><a href="#first">Undergrad Courses</a></li>
-				<li><a href="#second">Second Section</a></li>
-				<li><a href="#cta">Get Started</a></li>
+				<li><a href="#second">Research Projects</a></li>
+				<li><a href="#third">Personal Projects</a></li>
+				<li><a href="#fourth">Work/Volunteer</a></li>
 			</ul>
 		</nav>
 
@@ -66,35 +67,34 @@
 			</section>
 
 			<!-- First Section -->
-			<section id="first" class="main special">
+			<section id="first" class="main">
 				<header class="major">
 					<h2>Undergraduate Courses</h2>
-					<p align="justify">
-						Because of the particularity of the my double-major, I have taken a wide
-						variety of courses during my undergraduate study at UW-Madison. Here are
-						the courses I have taken divided into 4 areas: Math, Physics, Engineering,
-						and Computer Science.
-					</p>
 				</header>
+				<p align="justify">
+					Because of the particularity of the my double-major, I have taken a wide
+					variety of courses during my undergraduate study at UW-Madison. Here are
+					the courses I have taken divided into 4 areas: Math, Physics, Engineering,
+					and Computer Science.
+				</p>
 				<ul class="features">
 					<li>
-						<span class="icon solid major style1 fa-code"></span>
+						<span class="icon solid major style2 fa-calculator"></span>
 						<h3><a href="undergrad-courses/math.html" class="button">Math</a></h3>
 						<p>calculus, applied mathematic modeling, numerical analysis, ...</p>
 					</li>
 					<li>
-						<span class="icon major style3 fa-copy"></span>
+						<span class="icon major style3 fa-balance-scale"></span>
 						<h3><a href="undergrad-courses/physics.html" class="button">Physics</a></h3>
-						<p>mechanics, quantum physics, electromagnetism, optics,
-							...</p>
+						<p>mechanics, quantum physics, electromagnetism, optics, ...</p>
 					</li>
 					<li>
-						<span class="icon major style5 fa-gem"></span>
+						<span class="icon major style4 fa-wrench"></span>
 						<h3><a href="undergrad-courses/engr.html" class="button">Engineering</a></h3>
 						<p>circuit analysis, signal processing</p>
 					</li>
 					<li>
-						<span class="icon solid major style1 fa-code"></span>
+						<span class="icon solid major style6 fa-code"></span>
 						<h3><a href="undergrad-courses/cs.html" class="button">Computer Science</a></h3>
 						<p>OOP, OS, ML, DBMS, ...</p>
 					</li>
@@ -107,67 +107,135 @@
 			</section>
 
 			<!-- Second Section -->
-			<section id="second" class="main special">
+			<section id="second" class="main">
 				<header class="major">
 					<h2>Research Projects</h2>
-					<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-						posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-				</header>
-				<ul class="statistics">
-					<li class="style1">
-						<span class="icon solid fa-code-branch"></span>
-						<strong>5,120</strong> Etiam
-					</li>
-					<li class="style2">
-						<span class="icon fa-folder-open"></span>
-						<strong>8,192</strong> Magna
-					</li>
-					<li class="style3">
-						<span class="icon solid fa-signal"></span>
-						<strong>2,048</strong> Tempus
-					</li>
-					<li class="style4">
-						<span class="icon solid fa-laptop"></span>
-						<strong>4,096</strong> Aliquam
-					</li>
-					<li class="style5">
-						<span class="icon fa-gem"></span>
-						<strong>1,024</strong> Nullam
-					</li>
-				</ul>
-				<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit
-					amet nisl eu arcu faucibus
-					hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet,
-					fermentum pellentesque et purus.
-					Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam
-					porttitor placerat sapien, sed
-					eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a
-					mollis est efficitur
-					vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna
-					libero. Morbi auctor iaculis
-					porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent
-					eleifend lacus in lectus aliquam
-					porta. Cras eu ornare dui curabitur lacinia.</p>
-				<footer class="major">
-					<ul class="actions special">
-						<li><a href="generic.html" class="button">Learn More</a></li>
+					<p align="left">
+						<b>
+							<a href="https://eliceirilab.org">
+								Laboratory for Optical and Computational Instrumentation (LOCI)
+							</a>
+						</b>
+					<ul align="left">
+						<li>
+							Resolved <a href=https://github.com/scifio/scifio/issues>GitHub</a> issues for the
+							<a href="https://scif.io">Scientific Image Format Input & Output (SCIFIO)</a>
+							project in <a href="https://imagej.net">ImageJ</a> by analyzing codes and writing unit tests
+							in Java.
+						</li>
+						<li>
+							Inspected image metadata of <a href="https://openexr.readthedocs.io/en/latest/">OpenEXR</a>,
+							an unsupported image file type in SCIFIO, and translated it to
+							SCIFIO-specific image metadata to support OpenEXR in the image processing program ImageJ.
+						</li>
+						<li>
+							Migrated automatic Maven project building process from TravisCI to
+							<a href="https://github.com/features/actions">GitHub Actions</a> by
+							modifying shell scripts and YAML files.
+						</li>
 					</ul>
-				</footer>
+					<p>
+						<hr />
+					<p align="left">
+						<b>Security and Privacy Research Group</b>
+					<ul align="left">
+						<li>
+							Investigated how a bit-flipping attack can log in to a Linux without knowing the password.
+						</li>
+						<li>
+							Examined Linux source codes used during login to identify which variable needs to be
+							bit-flipped to bypass the password and where it is in memory so that such attacks can be
+							reproduced by heating a part of a physical computer memory using a laser.
+						</li>
+					</ul>
+					<p>
+						<hr />
+					<p align="left">
+						<b>Connected and Automated Vehicle & Highway (CAVH) Simulation Group</b>
+					<ul align="left">
+						<li>
+							Created 3D models of various construction signs using SketchUp and Adobe Photoshop for
+							better visualization in the simulation.
+						</li>
+						<li>
+							Built a traffic flow simulation with 3D animation for dedicated lanes of connected automated
+							vehicles from Madison to Chicago O'Hare Airport via I-90 under regular conditions and
+							construction using PTV Vissim.
+						</li>
+						<li>
+							Collected and compared the data of the performance of the CAVH dedicated lane and
+							human-driven lanes with the goal of presenting the information to the Wisconsin Department
+							of Transportation.
+						</li>
+					</ul>
+					<p>
+				</header>
 			</section>
 
-			<!-- Get Started -->
-			<section id="cta" class="main special">
+			<!-- Third Section -->
+			<section id="third" class="main">
 				<header class="major">
-					<h2>Congue imperdiet</h2>
-					<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-						posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-				</header>
-				<footer class="major">
-					<ul class="actions special">
-						<li><a href="generic.html" class="button primary">Get Started</a></li>
-						<li><a href="generic.html" class="button">Learn More</a></li>
+					<h2>Personal Projects</h2>
+					<p align="left">
+						<b>Biological Age Prediction</b>
+					<ul align="left">
+						<li>Surveyed publications on health status assessment.</li>
+						<li>Investigated different models to estimate one's biological age using various biological
+							markers.</li>
+						<li>Evaluated existing biological age prediction models using statistical analysis and survival
+							models.</li>
+						<li>Implemented machine learning models using TensorFlow, including regressors, SVM, DNN, and
+							CNN, to estimate biological age; the results are compared with existing models.</li>
+						<li>Researched Neural Architecture Search Network in TensorFlow and experimented with it to find
+							the architecture with the highest performance.</li>
 					</ul>
-				</footer>
+					<p>
+						<hr />
+					<p align="left">
+						<b>Mandatory Lane Change Prediction</b>
+					<ul align="left">
+						<li> Researched proposing a mandatory lane change (MLC) model based on NGSIM data
+							on the US101 highway to produce a better MLC model for traffic simulations.</li>
+						<li>Created LSTM models to predict vehicles’ lane change behaviors, such as yaw angle,
+							acceleration, etc. </li>
+					</ul>
+					<p>
+				</header>
+			</section>
+
+			<!-- Fourth Section -->
+			<section id="fourth" class="main">
+				<header class="major">
+					<h2>Work / Volunteer Experience</h2>
+					<p align="left">
+						<b>
+							<a href="https://chtc.cs.wisc.edu">
+								Center for High Throughput Computing (CHTC)</a>
+							-
+							<a href="https://osg-htc.org">
+								Open Science Grid</a>
+						</b>
+					<ul align="left">
+						<li>Generated, debugged, and updated GitHub Actions to trigger automatic workflows that build
+							and test projects and Docker images.</li>
+						<li>Modified Docker files to enable/disable repositories by default while preserving their
+							original behaviors.</li>
+						<li>Built three reusable GitHub composite actions for building, caching/loading, and pushing
+							Docker images for all OSG repositories.</li>
+					</ul>
+					<p>
+						<hr />
+					<p align="left">
+						<b>RND4IMPACT</b>
+					<ul align="left">
+						<li>Studied reinforcement learning by following online lectures from Stanford; learned about
+							Markov Decision Process, Q-learning, policy optimization, and imitation learning through
+							problem sets and programming assignments.</li>
+						<li>Researched privacy and security concerns in machine learning; collected and compared methods
+							to ensure data privacy, such as distributed learning and differential privacy.</li>
+					</ul>
+					<p>
+				</header>
 			</section>
 
 		</div>
@@ -183,8 +251,10 @@
 					<dd><a href="mailto:yongle.jack.yuan@gmail.com">yongle.jack.yuan@gmail.com</a></dd>
 				</dl>
 				<ul class="icons">
-					<li><a href="https://github.com/yongleyuan" class="icon brands fa-github alt" target="_blank"><span class="label">GitHub</span></a></li>
-					<li><a href="https://www.linkedin.com/in/yongleyuan/" class="icon brands fa-linkedin alt" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/yongleyuan" class="icon brands fa-github alt" target="_blank"><span
+								class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/yongleyuan/" class="icon brands fa-linkedin alt"
+							target="_blank"><span class="label">LinkedIn</span></a></li>
 				</ul>
 			</section>
 			<p class="copyright">&copy; Yongle Yuan. Design: <a href="https://html5up.net">HTML5
